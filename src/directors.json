@@ -1,0 +1,28 @@
+{
+    "name1": {
+        "living": "1930-1990",
+        "video": "url",
+        "gallery": [
+            "main photo",
+            "picture2"
+        ],
+        "city": "just name for now, transform into coordinates in the future",
+        "info": {
+            "1930-1940": "info",
+            "1940-1950": "info"
+        }
+    },
+    "name2": {
+        "living": "1930-1990",
+        "video": "url",
+        "gallery": [
+            "main photo",
+            "picture2"
+        ],
+        "city": "just name for now, transform into coordinates in the future",
+        "info": {
+            "1930-1940": "info",
+            "1940-1950": "info"
+        }
+    }
+}

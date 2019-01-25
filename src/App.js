@@ -1,28 +1,39 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Header from "./components/layout/Header";
+import Main from "./components/pages/Main";
+import Search from "./components/pages/Search";
+import Director from "./components/pages/Director";
+
 import './App.css';
 
-class App extends Component {
+const directorsInfo = require('./directors.json');
+
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      directors: Object.keys(directorsInfo),
+      directorInfo: directorsInfo
+    }
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" render={props => (
+            <Main />
+          )} />
+          <Route path="/search" render={props => (
+            <Search />
+          )} />
+          <Route path="/director/1" render={props => (
+            <Director name={this.state.directors[0]} info={this.state.directorInfo[this.state.directors[0]]["info"]} />
+          )} />
+        </div>
+      </Router>
     );
   }
 }
-
-export default App;
