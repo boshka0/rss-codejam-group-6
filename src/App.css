@@ -105,3 +105,57 @@ a {
 .team-member-photo {
   border-radius: 50%;
 }
+
+.search-wrapper {
+  padding: 30px 10px;
+}
+
+.search-heading {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 23px;
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.searchbar:focus {
+  outline-color: var(--main-color);
+}
+
+.director-data {
+  border: 2px solid lightgray;
+  width: 60%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+
+.director-data-img {
+  height: 100px;
+}
+
+.director-data-city {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.director-data-button {
+  padding: 5px;
+  background-color: var(--main-color);
+  color: white;
+  border: 2px solid transparent;
+}
+
+.director-data-button:hover {
+  color: var(--main-color);
+  background-color: white;
+  border: 2px solid var(--main-color);
+}

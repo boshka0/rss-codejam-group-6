@@ -9,7 +9,7 @@ export default function Header() {
           <Link className="page-link" to="/">
             Главная
           </Link>
-          <Link className="page-link" to="/search">
+          <Link className="page-link" to="/directors">
             Поиск режиссера
           </Link>
         </div>
