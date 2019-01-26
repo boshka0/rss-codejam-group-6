@@ -15,7 +15,7 @@ export default function Header() {
         </div>
         <div className="nav">
           <Link className="page-link" to="/search">
-            <i className="fas fa-search"></i>
+            <i className="fas fa-search" />
             <span>Поиск</span>
           </Link>
         </div>
@@ -23,7 +23,3 @@ export default function Header() {
     </div>
   )
 }
-
-// Header.propTypes = {
-//   link: PropTypes.string
-// };
