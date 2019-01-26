@@ -18,37 +18,6 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  background: var(--main-color);
-  color: #fff;
-  padding: 10px 30px; 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  max-width: 200px;
-  font-size: 55px;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.page-link {
-  color: #fff;
-  display: block;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.page-link:hover {
-  color: #333;
-}
-
 .director-vidget {
   border: 2px solid var(--main-color);
   display: inline-block;

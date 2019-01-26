@@ -1,18 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Header.css';
+import logo from './img/theatre.svg';
 
 export default function Header() {
-    return (
+  return (
+    <div className="head-wrapper">
       <header className="main-header">
-        <h1 className="logo">КУЛЬТ</h1>
+        <div className="logo">
+          <img src={logo} width={50} height={50} alt={'logo'}/>
+          <a href={'#'}>
+            <h1>Режиссеры театра Беларуси</h1>
+          </a>
+        </div>
         <div className="nav">
-          <Link className="page-link" to="/">
-            Главная
-          </Link>
           <Link className="page-link" to="/search">
-            Поиск режиссера
+            <i className="fas fa-search"></i>
+            <span>Поиск</span>
           </Link>
         </div>
       </header>
-    )
+    </div>
+  )
 }
+
+// Header.propTypes = {
+//   link: PropTypes.string
+// };
