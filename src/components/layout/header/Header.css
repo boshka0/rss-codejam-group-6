@@ -1,0 +1,41 @@
+.head-wrapper {
+  background: var(--main-color);
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > a {
+  color: #fff;
+}
+
+h1 {
+  font-size: 18px;
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.head-search {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.header:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.fa-search {
+  padding-right: 8px;
+}
