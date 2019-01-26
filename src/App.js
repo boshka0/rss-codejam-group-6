@@ -5,6 +5,7 @@ import Header from "./components/layout/header/Header";
 import Main from "./components/pages/Main";
 import Search from "./components/pages/Search";
 import Director from "./components/pages/Director";
+import Footer from "./components/layout/footer/Footer";
 
 import './App.css';
 
@@ -32,6 +33,7 @@ export default class App extends Component {
           <Route path="/director/1" render={props => (
             <Director name={this.state.directors[0]} info={this.state.directorInfo[this.state.directors[0]]["info"]} />
           )} />
+          <Footer/>
         </div>
       </Router>
     );

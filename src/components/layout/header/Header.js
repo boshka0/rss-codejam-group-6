@@ -14,7 +14,7 @@ export default function Header() {
           </a>
         </div>
         <div className="nav">
-          <Link className="page-link" to="/search">
+          <Link className="page-link head-search" to="/search">
             <i className="fas fa-search" />
             <span>Поиск</span>
           </Link>

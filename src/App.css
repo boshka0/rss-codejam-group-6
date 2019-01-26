@@ -9,13 +9,19 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
 }
 
 a {
   color: #333;
   text-decoration: none;
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .director-vidget {
@@ -46,6 +52,7 @@ a {
 }
 
 .main-wrapper {
+  flex: 1 0 auto;
   text-align: center;
 }
 
