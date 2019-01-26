@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DirectorTimeline from '../DirectorTimeline';
 
-export default class Director extends Component {
-  render() {
-    return (
-      <DirectorTimeline name={this.props.name} info={this.props.info}/>
-    )
-  }
+export default function Director({ data }) {
+  return (
+    <div>
+      <h1>Hello</h1>
+      <DirectorTimeline info={data.bio} />
+    </div>
+  )
 }
+

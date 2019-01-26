@@ -9,7 +9,7 @@ export default class Main extends Component {
     return (
       <main className="main-wrapper">
         <About />
-        <DirectorVidget name="Someone" city="Minsk" mainInfo="something" photo="" />
+        <DirectorVidget data={this.props.data} />
         <Team />
       </main>
     )

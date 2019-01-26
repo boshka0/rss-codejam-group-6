@@ -3,20 +3,22 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "./components/layout/Header";
 import Main from "./components/pages/Main";
-import Search from "./components/pages/Search";
-import Director from "./components/pages/Director";
+import Directors from "./components/Directors";
 
-import './App.css';
-
-const directorsInfo = require('./directors.json');
+const directorsData = require('./directors.json');
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+    this.initialData = directorsData;
+    this.dirOfTheDay = Math.floor(Math.random() * 7);
     this.state = {
-      directors: Object.keys(directorsInfo),
-      directorInfo: directorsInfo
+      term: "",
+      data: directorsData 
     }
+  }
+  updateData = (config) => {
+    this.setState(config);
   }
   render() {
     return (
@@ -24,13 +26,10 @@ export default class App extends Component {
         <div className="App">
           <Header />
           <Route exact path="/" render={props => (
-            <Main />
+            <Main data={this.initialData[this.dirOfTheDay]}/>
           )} />
-          <Route path="/search" render={props => (
-            <Search />
-          )} />
-          <Route path="/director/1" render={props => (
-            <Director name={this.state.directors[0]} info={this.state.directorInfo[this.state.directors[0]]["info"]} />
+          <Route path="/directors" render={props => (
+            <Directors term={this.state.term} initialData={this.initialData} update={this.updateData} data={this.state.data}/>
           )} />
         </div>
       </Router>

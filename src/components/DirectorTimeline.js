@@ -2,18 +2,17 @@ import React from 'react';
 import { Timeline, TimelineItem } from 'vertical-timeline-component-for-react';
 import uuid from 'uuid';
 
-export default function DirectorTimeline(props) {
-  const info = props.info;
-  const periods = Object.keys(info);
-  const timeLineItems = periods.map(period => {
-    const aboutPeriod = info[period];
+export default function DirectorTimeline({ info }) {
+  const timeLineItems = info.map(period => {
+    const years = period['years'],
+          info = period['info'];
     return (
       <TimelineItem
         key={uuid.v4()}
-        dateText={period}
+        dateText={years}
         style={{ color: '#e86971' }}
       >
-        <p>{aboutPeriod}</p>
+        <p>{info}</p>
       </TimelineItem>
     )
   })

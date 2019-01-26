@@ -1,9 +1,17 @@
 import React from "react";
+import Searchbar from '../Searchbar';
+import DirectorList from '../DirectorList';
 
-export default function Search() {
+export default function Search(props) {
   return (
-    <React.Fragment>
-      <h1>Поиск режиссера</h1>
-    </React.Fragment>
+    <div className="search-wrapper">
+      <h2 className="search-heading">Введите имя режиссера или его город</h2>
+      <Searchbar
+        term={props.term}
+        initialData={props.initialData}
+        update={props.update}
+      />
+      <DirectorList data={props.data} />
+    </div>
   );
 }
