@@ -1,27 +1,35 @@
-import React from "react";
+import React, { Component } from 'react'
 
-export default ({ term, initialData, update }) => {
-  const dataSearch = e => {
+export default class Searchbar extends Component {
+  dataSearch = e => {
     const value = e.target.value.toLowerCase();
 
-    const filter = initialData.filter(director => {
+    const filter = this.props.initialData.filter(director => {
       return director.name
-          .toLowerCase()
-          .includes(value) || director.city.toLowerCase().includes(value);
+        .toLowerCase()
+        .includes(value) || director.city.toLowerCase().includes(value);
     });
 
-    update({
+    this.props.update({
       term: value,
       data: filter
     });
   };
-
-  return (
-    <input
-      value={term}
-      type="text"
-      className="searchbar"
-      onChange={dataSearch}
-    />
-  );
-};
+  componentWillUnmount() {
+    this.props.update({
+      term: "",
+      data: this.props.initialData
+    })
+  }
+  render() {
+    return (
+      <input
+        value={this.props.term}
+        type="text"
+        className="searchbar"
+        onChange={this.dataSearch}
+        autoFocus
+      />
+    )
+  }
+}
