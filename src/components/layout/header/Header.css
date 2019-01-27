@@ -39,3 +39,27 @@ h1 {
 .fa-search {
   padding-right: 8px;
 }
+
+@media screen and (max-width: 1080px){
+  .main-header {
+    padding: 5px 0;
+  }
+  .logo {
+    padding-left: 10px;
+  }
+  .nav {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .main-header {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .main-header {
+    flex-direction: column;
+  }
+}

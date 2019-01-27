@@ -1,9 +1,9 @@
 .about-container {
-  min-height: 650px;
-  background: rgba(0, 0, 0, 0.7) top no-repeat;
-  background-image: image-set("./img/about-1x.jpg" 1x,
-                              "./img/about-2x.jpg" 2x,
-                              "./img/about-3x.jpg" 3x);
+  min-height: 405px;
+  background: rgba(0, 0, 0, 0.7) url("./img/about-1x.jpg") top no-repeat;
+  /*background-image: image-set("./img/about-1x.jpg" 1x,*/
+                              /*"./img/about-2x.jpg" 2x,*/
+                              /*"./img/about-3x.jpg" 3x);*/
   background-blend-mode: darken;
   overflow: hidden;
 }
@@ -19,4 +19,52 @@
 h2 {
   padding: 10px 0;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1080px){
+
+  .about-container {
+    min-height: 400px;
+    background-position: center;
+  }
+
+  .about-wrapper {
+    padding: 80px 25px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .about-container {
+    min-height: 300px;
+    background: rgba(0, 0, 0, 0.7) url("./img/about-2x.jpg") top no-repeat;
+  }
+
+  .about-wrapper{
+    padding: 60px 5px;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .about-container {
+    min-height: 200px;
+    background: rgba(0, 0, 0, 0.7) url("./img/about-3x.jpg") top no-repeat;
+  }
+
+  .about-wrapper{
+    padding: 20px 5px;
+    font-size: 13px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
 }
