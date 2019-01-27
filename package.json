@@ -5,6 +5,7 @@
   "homepage": "http://boshka0.github.io/rss-codejam-group-6",
   "dependencies": {
     "i18next": "^14.0.1",
+    "i18next-browser-languagedetector": "^2.2.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-i18next": "^9.0.9",
