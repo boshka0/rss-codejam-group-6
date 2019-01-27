@@ -1,11 +1,12 @@
 import React from "react";
+import { withNamespaces } from 'react-i18next';
 import Searchbar from '../Searchbar';
 import DirectorList from '../DirectorList';
 
-export default function Search(props) {
+function Search(props) {
   return (
     <div className="search-wrapper">
-      <h2 className="search-heading">Введите имя режиссера или его город</h2>
+      <h2 className="search-heading">{props.t('Enter director')}</h2>
       <Searchbar
         term={props.term}
         initialData={props.initialData}
@@ -15,3 +16,5 @@ export default function Search(props) {
     </div>
   );
 }
+
+export default withNamespaces()(Search);

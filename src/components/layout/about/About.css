@@ -1,9 +1,6 @@
 .about-container {
-  min-height: 405px;
+  min-height: 680px;
   background: rgba(0, 0, 0, 0.7) url("./img/about-1x.jpg") top no-repeat;
-  /*background-image: image-set("./img/about-1x.jpg" 1x,*/
-                              /*"./img/about-2x.jpg" 2x,*/
-                              /*"./img/about-3x.jpg" 3x);*/
   background-blend-mode: darken;
   overflow: hidden;
 }
@@ -24,7 +21,7 @@ h2 {
 @media screen and (max-width: 1080px){
 
   .about-container {
-    min-height: 400px;
+    min-height: 600px;
     background-position: center;
   }
 

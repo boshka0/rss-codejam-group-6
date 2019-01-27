@@ -1,15 +1,16 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import './About.css';
 
-export default function About() {
+function About({ t }) {
   return (
     <div className="about-container">
       <div className="about-wrapper">
-        <h2>27 марта - всемирный день театра</h2>
-        <p>Портал Режиссеры театра Беларуси создан с целью дать полную информацию
-        о белорусских режиссерах, их творческой деятельности и достигнутых наградах,
-        присвоенных за развитие театрального искусства в Беларуси.</p>
+        <h2>{t('27 March')}</h2>
+        <p>{t('About website')}</p>
       </div>
     </div>
   )
 }
+
+export default withNamespaces()(About);

@@ -1,7 +1,8 @@
 import React from "react";
+import { withNamespaces } from 'react-i18next';
 import { Link } from "react-router-dom";
 
-export default ({ director }) => {
+const directorData = ({ director, t }) => {
   const link = `/directors/${director.id}`;
   return (
     <div className="director-data">
@@ -11,8 +12,10 @@ export default ({ director }) => {
         <h4 className="director-data-city">{director.city}</h4>
       </div>
       <Link className="director-data-button" to={link}>
-        Узнать больше
+        {t('Learn more')}
       </Link>
     </div>
   );
 };
+
+export default withNamespaces()(directorData);
