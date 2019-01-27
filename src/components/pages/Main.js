@@ -9,7 +9,9 @@ export default class Main extends Component {
     return (
       <main className="main-wrapper">
         <About />
-        <DirectorVidget data={this.props.data} />
+        <DirectorVidget 
+          data={this.props.data} 
+          lang={this.props.lang}/>
         <Team />
       </main>
     )

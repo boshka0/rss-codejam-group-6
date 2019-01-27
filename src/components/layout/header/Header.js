@@ -5,26 +5,29 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from './img/theatre.svg';
 
-const changeLanguage = (lng) => {
-  i18n.changeLanguage(lng);
-}
 
-const handleChange = (event) => changeLanguage(event.target.value);
-
-function Header({ t }) {
+function Header(props) {
+  const changeLanguage = (lng) => { i18n.changeLanguage(lng) }
+  const handleChange = (event) => {
+    const lang = event.target.value;
+    props.update({
+      lang: lang
+    })
+    changeLanguage(lang);
+  }
   return (
     <div className="head-wrapper">
       <header className="main-header">
         <div className="logo">
           <img src={logo} width={50} height={50} alt={'logo'}/>
           <a href={'#'}>
-            <h1>{t('Directors of the theater')}</h1>
+            <h1>{props.t('Directors of the theater')}</h1>
           </a>
         </div>
         <div className="nav">
           <Link className="page-link head-search" to="/directors">
             <i className="fas fa-search" />
-            <span>{t('Find')}</span>
+            <span>{props.t('Find')}</span>
           </Link>
           <select className="language-select" onChange={handleChange}>
               <option value="en">EN</option>
