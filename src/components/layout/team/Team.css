@@ -14,7 +14,7 @@
 }
 
 .team {
-    display: flex;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -29,10 +29,21 @@
 
 .team-member-photo {
   border-radius: 50%;
+  max-width: 100%;
 }
 
 h3 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px){
+  .team {
+    flex-direction: column;
+  }
+
+  .team-member-photo {
+    width: 100px;
+  }
 }
