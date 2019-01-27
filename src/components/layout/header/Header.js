@@ -1,8 +1,13 @@
 import React from 'react';
 import { withNamespaces } from 'react-i18next';
+import i18n from '../../../services/translate';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from './img/theatre.svg';
+
+const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+}
 
 function Header({ t }) {
   return (
@@ -19,6 +24,9 @@ function Header({ t }) {
             <i className="fas fa-search" />
             <span>{t('Find')}</span>
           </Link>
+          <button onClick={() => changeLanguage('en')}>en</button>
+          <button onClick={() => changeLanguage('ru')}>ru</button>
+          <button onClick={() => changeLanguage('by')}>by</button>
         </div>
       </header>
     </div>
