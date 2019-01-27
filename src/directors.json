@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Лариса Помпеевна Александровская",
         "years": "1902-1980",
-        "video": "https://www.youtube.com/watch?v=icg14Eihosw",
+        "videoId": "icg14Eihosw",
         "gallery": [
             "https://is.gd/sCWRAi",
             "https://is.gd/1tuYOy",
@@ -11,6 +11,10 @@
             "https://is.gd/545WuY"
         ],
         "city": "Минск",
+        "coordinates": {
+            "lat": 53.904,
+            "lng": 27.56
+        },
         "bio": [
             { 
                 "years": "1924—1928",
@@ -54,7 +58,7 @@
         "id": 2,
         "name": "Виталий Михайлович Барковский",
         "years": "1947",
-        "video": null,
+        "videoId": null,
         "gallery": [
             "https://is.gd/7ZJzs7",
             "https://is.gd/EcCO4o",
@@ -62,6 +66,10 @@
             "https://is.gd/AiztIl"
         ],
         "city": "Смоленск",
+        "coordinates": {
+            "lat": 54.7818,
+            "lng": 32.0401
+        },
         "bio": [
             { 
                 "years": "1969",
@@ -101,7 +109,7 @@
         "id": 3,
         "name": "Александр Федорович Горцуев",
         "years": "1959",
-        "video": "https://www.youtube.com/watch?v=wy8bCpDkeOo",
+        "videoId": "wy8bCpDkeOo",
         "gallery": [
             "https://is.gd/sbox8v",
             "https://is.gd/HINpfG",
@@ -109,6 +117,10 @@
             "https://is.gd/vx7hBr"
         ],
         "city": "Минск",
+        "coordinates": {
+            "lat": 53.904,
+            "lng": 27.56
+        },
         "bio": [
             { 
                 "years": "1980",
@@ -157,7 +169,7 @@
         "id": 4,
         "name": "Лев Михайлович Эльстон",
         "years": "1900—1986",
-        "video": null,
+        "videoId": null,
         "gallery": [
             "https://is.gd/mU0KxI",
             "https://is.gd/0X9yfH",
@@ -165,6 +177,10 @@
             "https://is.gd/qZzLrb"
         ],
         "city": "Гомель",
+        "coordinates": {
+            "lat": 52.4257,
+            "lng": 31.012
+        },
         "bio": [
             { 
                 "years": "1921",
@@ -214,7 +230,7 @@
         "id": 5,
         "name": "Фёдор Иванович Шмаков",
         "years": "1917—2009",
-        "video": "https://www.youtube.com/watch?v=WckdzuNpPTU",
+        "videoId": "WckdzuNpPTU",
         "gallery": [
             "https://is.gd/h90U8B",
             "https://is.gd/jVYWXG",
@@ -222,6 +238,10 @@
             "https://is.gd/WTDQus"
         ],
         "city": "Витебск",
+        "coordinates": {
+            "lat": 55.1951,
+            "lng": 30.206
+        },
         "bio": [
             { 
                 "years": "1939",

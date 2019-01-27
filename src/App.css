@@ -9,7 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 body {
@@ -205,6 +205,15 @@ a {
   margin: 0 20px;
 }
 
+div.bigpicture.link.picture {
+  display: block !important;
+  margin: 50px auto;
+}
+
+.director-video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 
 @media only screen and (max-width: 600px) {
   .director-page-img {
