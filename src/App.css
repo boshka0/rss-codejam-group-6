@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: none;
 }
 
 body {
@@ -165,4 +166,15 @@ a {
   color: var(--main-color);
   background-color: white;
   border: 2px solid var(--main-color);
+}
+
+div.bigpicture.link.picture {
+  display: block !important;
+  margin: 50px auto;
+}
+
+.director-video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }

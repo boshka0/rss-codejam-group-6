@@ -8,6 +8,7 @@ export default function DirectorVideo(props) {
             src={`https://www.youtube.com/watch?v=${props.videoId}`}
         >
             <img 
+                className="director-video"
                 src={`https://img.youtube.com/vi/${props.videoId}/hqdefault.jpg`} 
                 alt="video" />
         </BigPicture>
