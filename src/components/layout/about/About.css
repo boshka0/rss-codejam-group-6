@@ -1,7 +1,9 @@
 .about-container {
-  min-height: 1080px;
-  background: rgba(0, 0, 0, 0.7) url("./img/big-picture.jpg");
-  background-size: 100% 100%;
+  min-height: 650px;
+  background: rgba(0, 0, 0, 0.7) top no-repeat;
+  background-image: image-set("./img/about-1x.jpg" 1x,
+                              "./img/about-2x.jpg" 2x,
+                              "./img/about-3x.jpg" 3x);
   background-blend-mode: darken;
   overflow: hidden;
 }
