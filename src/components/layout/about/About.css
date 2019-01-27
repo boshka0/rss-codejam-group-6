@@ -1,0 +1,20 @@
+.about-container {
+  min-height: 1080px;
+  background: rgba(0, 0, 0, 0.7) url("./img/big-picture.jpg");
+  background-size: 100% 100%;
+  background-blend-mode: darken;
+  overflow: hidden;
+}
+
+.about-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-top: 105px;
+  align-items: center;
+  color: #fff;
+}
+
+h2 {
+  padding: 10px 0;
+  font-size: 24px;
+}
