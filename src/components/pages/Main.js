@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import About from "../About";
+import About from "../layout/about/About";
 import DirectorVidget from "../DirectorVidget";
 import Team from "../Team";
 

@@ -19,13 +19,13 @@ export default function Footer() {
           </a>
         </div>
         <div className="foot-links">
-          <Link className="page-link foot-link" to="/search">
+          <Link className="page-link foot-link" to="/directors">
             <span>Поиск</span>
           </Link>
-          <Link className="page-link foot-link" to="/search">
+          <Link className="page-link foot-link" to="/directors">
             <span>Link1</span>
           </Link>
-          <Link className="page-link foot-link" to="/search">
+          <Link className="page-link foot-link" to="/directors">
             <span>Link2</span>
           </Link>
         </div>
