@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --main-color: #f44242;
 }
@@ -145,7 +148,7 @@ a {
   padding: 15px;
 }
 
-.director-data-img {
+.director-data-img img {
   height: 100px;
 }
 
@@ -188,12 +191,19 @@ a {
   display: inline-block;
   width: 50%;
   vertical-align: top;
+  text-align: center;
   margin-top: 10%; 
 }
 
 .director-page-bio > h1{
   font-size: 1.8rem;
 }
+
+.carousel-photo {
+  height: 400px;
+  margin: 0 20px;
+}
+
 
 @media only screen and (max-width: 600px) {
   .director-page-img {
@@ -208,6 +218,10 @@ a {
   .director-page-bio {
     display: block;
     width: 100%;
-    margin: 0 10%;
+  }
+
+  .carousel-photo {
+    height: 200px;
+    margin: 0 20px;
   }
 }
