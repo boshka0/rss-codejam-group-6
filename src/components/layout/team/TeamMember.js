@@ -6,7 +6,7 @@ export default function TeamMember(props) {
   return (
     <li className="team-member">
       <figure>
-        <img className="team-member-photo" src={props.photo} alt="developer" />
+        <img className="team-member-photo" src={props.photo} width="130" alt="developer" />
         <figcaption>{props.name}</figcaption>
       </figure>
       <a href={props.link} target="_base">

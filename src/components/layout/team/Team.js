@@ -9,14 +9,16 @@ import './Team.css';
 
 function Team({ t }) {
   return (
+    <div className="team-block">
     <div className="team-wrapper">
-      <h3 className="team-heading">{t('Our team')}:</h3>
+      <h3 className="team-heading">{t('Our team')}</h3>
       <ul className="team">
         <TeamMember name={t('Nastya Boksha')} photo={dev1} link="https://github.com/boshka0" />
         <TeamMember name={t('Lesnik Matvey')} photo={dev2} link="https://github.com/qxFisher" />
         <TeamMember name={t('Ivan Delendick')} photo={dev4} link="https://github.com/AngryIvan" />
         <TeamMember name={t('Siarhei Kandratsiuk')} photo={dev3} link="https://github.com/GattyGamaun" />
       </ul>
+    </div>
     </div>
   )
 }
