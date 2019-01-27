@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Header from "./components/layout/Header";
+import Header from "./components/layout/header/Header";
 import Main from "./components/pages/Main";
 import Directors from "./components/Directors";
+import Footer from "./components/layout/footer/Footer";
 
 const directorsData = require('./directors.json');
 
@@ -31,6 +32,7 @@ export default class App extends Component {
           <Route path="/directors" render={props => (
             <Directors term={this.state.term} initialData={this.initialData} update={this.updateData} data={this.state.data}/>
           )} />
+          <Footer/>
         </div>
       </Router>
     );
