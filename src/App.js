@@ -12,7 +12,7 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.initialData = directorsData;
-    this.dirOfTheDay = Math.floor(Math.random() * 7);
+    this.dirOfTheDay = Math.floor(Math.random() * 5);
     this.state = {
       lang: "en",
       term: "",
