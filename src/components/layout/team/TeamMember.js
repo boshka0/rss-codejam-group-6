@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../images/github-logo.png";
+import logo from "./images/github-logo.png";
 import PropTypes from "prop-types";
 
 export default function TeamMember(props) {
@@ -20,4 +20,4 @@ TeamMember.propTypes = {
   name: PropTypes.string,
   photo: PropTypes.string,
   link: PropTypes.string
-}
+};
