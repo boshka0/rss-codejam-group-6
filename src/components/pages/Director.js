@@ -3,6 +3,7 @@ import DirectorTimeline from '../DirectorTimeline';
 import DirectorVideo from "../DirectorVideo";
 import DirectorMap from "../DirectorMap";
 import Slider from "react-slick";
+import uuid from "uuid";
 
 export default class Director extends Component {
   componentDidMount() {
@@ -29,9 +30,9 @@ export default class Director extends Component {
             <h2 className="director-page-city">{ this.props.data.city[this.props.lang] }</h2>
           </div>
         </div> 
-        <Slider {...settings}>
+        <Slider {...settings} className="carousel" >
           { this.props.data.gallery.map(photo => 
-            <div>
+            <div key={uuid.v4()}>
               <img alt='' src={photo} className="carousel-photo"/>
             </div>
           )}
