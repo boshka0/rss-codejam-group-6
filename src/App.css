@@ -166,3 +166,48 @@ a {
   background-color: white;
   border: 2px solid var(--main-color);
 }
+
+.director-page {
+  max-width: 1024px;
+  margin: 10px auto;
+}
+
+.director-page-img {
+  display: inline-block;
+  width: 50%;
+}
+
+.director-page-img img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.director-page-bio {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  margin-top: 10%; 
+}
+
+.director-page-bio > h1{
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .director-page-img {
+    display: block;
+    width: 100%;    
+  }
+
+  .director-page-img img {
+    width: 80%;
+  }
+
+  .director-page-bio {
+    display: block;
+    width: 100%;
+    margin: 0 10%;
+  }
+}
