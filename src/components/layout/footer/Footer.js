@@ -1,9 +1,10 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import logo from '../header/img/theatre.svg';
 
-export default function Footer() {
+function Footer({ t }) {
   return (
     <footer>
       <div className="foot-wrapper">
@@ -12,15 +13,15 @@ export default function Footer() {
           <a href={'#'} className="foot-logo">
             <img src={logo} width={80} height={80} alt={'logo'}/>
             <div className="block-string">
-              <div>Режиссеры</div>
-              <div>театра</div>
-              <div>Беларуси</div>
+              <div>{t('Directors')}</div>
+              <div>{t('Of the theater')}</div>
+              <div>{t('Of Belarus')}</div>
             </div>
           </a>
         </div>
         <div className="foot-links">
           <Link className="page-link foot-link" to="/directors">
-            <span>Поиск</span>
+            <span>{t('Find')}</span>
           </Link>
           <Link className="page-link foot-link" to="/directors">
             <span>Link1</span>
@@ -31,9 +32,11 @@ export default function Footer() {
         </div>
         </div>
         <div className="copyright">
-          <p>&copy; 2019 РТБ</p>
+          <p>&copy; 2019 {t('RTB')}</p>
         </div>
       </div>
     </footer>
   )
 }
+
+export default withNamespaces()(Footer);

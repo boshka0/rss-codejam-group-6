@@ -1,25 +1,28 @@
 import React from 'react';
+import { withNamespaces } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from './img/theatre.svg';
 
-export default function Header() {
+function Header({ t }) {
   return (
     <div className="head-wrapper">
       <header className="main-header">
         <div className="logo">
           <img src={logo} width={50} height={50} alt={'logo'}/>
           <a href={'#'}>
-            <h1>Режиссеры театра Беларуси</h1>
+            <h1>{t('Directors of the theater')}</h1>
           </a>
         </div>
         <div className="nav">
           <Link className="page-link head-search" to="/directors">
             <i className="fas fa-search" />
-            <span>Поиск</span>
+            <span>{t('Find')}</span>
           </Link>
         </div>
       </header>
     </div>
   )
 }
+
+export default withNamespaces()(Header);
