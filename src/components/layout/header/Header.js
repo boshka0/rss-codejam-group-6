@@ -9,6 +9,8 @@ const changeLanguage = (lng) => {
   i18n.changeLanguage(lng);
 }
 
+const handleChange = (event) => changeLanguage(event.target.value);
+
 function Header({ t }) {
   return (
     <div className="head-wrapper">
@@ -24,9 +26,11 @@ function Header({ t }) {
             <i className="fas fa-search" />
             <span>{t('Find')}</span>
           </Link>
-          <button onClick={() => changeLanguage('en')}>en</button>
-          <button onClick={() => changeLanguage('ru')}>ru</button>
-          <button onClick={() => changeLanguage('by')}>by</button>
+          <select className="language-select" onChange={handleChange}>
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+              <option value="by">BY</option>
+          </select>
         </div>
       </header>
     </div>
