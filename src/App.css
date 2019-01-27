@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --main-color: #f44242;
 }
@@ -6,6 +9,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: none;
 }
 
 body {
@@ -145,7 +149,7 @@ a {
   padding: 15px;
 }
 
-.director-data-img {
+.director-data-img img {
   height: 100px;
 }
 
@@ -165,4 +169,70 @@ a {
   color: var(--main-color);
   background-color: white;
   border: 2px solid var(--main-color);
+}
+
+.director-page {
+  max-width: 1024px;
+  margin: 10px auto;
+}
+
+.director-page-img {
+  display: inline-block;
+  width: 50%;
+}
+
+.director-page-img img{
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.director-page-bio {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+  margin-top: 10%; 
+}
+
+.director-page-bio > h1{
+  font-size: 1.8rem;
+}
+
+.carousel-photo {
+  height: 400px;
+  margin: 0 20px;
+}
+
+div.bigpicture.link.picture {
+  display: block !important;
+  margin: 50px auto;
+}
+
+.director-video {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .director-page-img {
+    display: block;
+    width: 100%;    
+  }
+
+  .director-page-img img {
+    width: 80%;
+  }
+
+  .director-page-bio {
+    display: block;
+    width: 100%;
+  }
+
+  .carousel-photo {
+    height: 200px;
+    margin: 0 20px;
+  }
 }

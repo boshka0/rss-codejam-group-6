@@ -7,7 +7,7 @@
             "by": "Ларыса Пампееўна Аляксандроўская"
         },
         "years": "1902-1980",
-        "video": "https://www.youtube.com/watch?v=icg14Eihosw",
+        "videoId": "icg14Eihosw",
         "gallery": [
             "https://is.gd/sCWRAi",
             "https://is.gd/1tuYOy",
@@ -18,6 +18,10 @@
             "ru": "Минск",
             "en": "Minsk",
             "by": "Мінск"
+        },
+        "coordinates": {
+            "lat": 53.904,
+            "lng": 27.56
         },
         "bio": [
             { 
@@ -62,112 +66,112 @@
             }
         ],
         "artwork": [
-            { 
-                "year": "1951", 
+            {
+                "year": "1951",
                 "name": {
                     "ru": "Запорожец за Дунаем",
                     "en": "Zaporozhets beyond the Danai",
                     "by": "Запарожац за Дунаем"
                 } 
             },
-            { 
-                "year": "1951", 
+            {
+                "year": "1951",
                 "name": {
                     "ru": "Тихий Дон",
                     "en": "Quiet Don",
                     "by": "Ціхі Дон"
-                } 
+                }
             },
-            { 
-                "year": "1952", 
+            {
+                "year": "1952",
                 "name": {
                     "ru": "Страшный двор",
                     "en": "Scary yard",
                     "by": "Страшны двор"
-                }  
+                }
             },
-            { 
-                "year": "1952", 
+            {
+                "year": "1952",
                 "name": {
                     "ru": "Русалка",
                     "en": "Mermaid",
                     "by": "Русалка"
-                }  
+                }
             },
-            { 
-                "year": "1952", 
+            {
+                "year": "1952",
                 "name": {
                     "ru": "Мазепа",
                     "en": "Mazepa",
                     "by": "Мазэпа"
-                } 
+                }
             },
-            { 
-                "year": "1953", 
+            {
+                "year": "1953",
                 "name": {
                     "ru": "Аида",
                     "en": "Aida",
                     "by": "Аіда"
-                }  
+                }
             },
-            { 
-                "year": "1953", 
+            {
+                "year": "1953",
                 "name": {
                     "ru": "Девушка из Полесья",
                     "en": "A girl from Palessie",
                     "by": "Дзяўчына з Палесся"
-                }  
+                }
             },
-            { 
-                "year": "1954", 
+            {
+                "year": "1954",
                 "name": {
                     "ru": "Борис Годунов",
                     "en": "Boris Godunov",
                     "by": "Барыс Гадуноў"
-                }  
+                }
             },
-            { 
-                "year": "1954", 
+            {
+                "year": "1954",
                 "name": {
                     "ru": "Травиата",
                     "en": "Traviata",
                     "by": "Травіята"
-                }  
+                }
             },
-            { 
-                "year": "1955", 
+            {
+                "year": "1955",
                 "name": {
                     "ru": "Трубадур",
                     "en": "Troubadour",
                     "by": "Трубадур"
-                } 
+                }
             },
-            { 
-                "year": "1956", 
+            {
+                "year": "1956",
                 "name": {
                     "ru": "Надежда Дурова",
                     "en": "Nadezhda Durova",
                     "by": "Надзея Дурава"
-                }  
+                }
             },
-            { 
-                "year": "1957", 
+            {
+                "year": "1957",
                 "name": {
                     "ru": "Михась Подгорный",
                     "en": "Mihass Podgorny",
                     "by": "Міхась Падгорны"
-                } 
+                }
             },
-            { 
-                "year": "1958", 
+            {
+                "year": "1958",
                 "name": {
                     "ru": "Ясный рассвет",
                     "en": "Clear dawn",
                     "by": "Яснае світанне"
                 }
             },
-            { 
-                "year": "1960", 
+            {
+                "year": "1960",
                 "name": {
                     "ru": "Пиковая дама",
                     "en": "Queen of spades",
@@ -328,17 +332,21 @@
             "by": "Аляксандр Фёдаравіч Гарцуеў"
         },
         "years": "1959",
-        "video": "https://www.youtube.com/watch?v=wy8bCpDkeOo",
+        "videoId": "wy8bCpDkeOo",
         "gallery": [
+            "https://is.gd/sbox8v",
             "https://is.gd/HINpfG",
             "https://is.gd/Dz7hwK",
-            "https://is.gd/vx7hBr",
-            "https://is.gd/sbox8v"
+            "https://is.gd/vx7hBr"
         ],
         "city": {
             "ru": "Минск",
             "en": "Minsk",
             "by": "Мінск"
+        },
+        "coordinates": {
+            "lat": 53.904,
+            "lng": 27.56
         },
         "bio": [
             { 
@@ -521,16 +529,21 @@
             "by": "Леў Міхайлавіч Эльстон"
         },
         "years": "1900—1986",
-        "video": null,
+        "videoId": null,
         "gallery": [
-            "https://is.gd/sbox8v",
             "https://is.gd/mU0KxI",
-            "https://is.gd/0X9yfH"
+            "https://is.gd/0X9yfH",
+            "https://is.gd/75TFmm",
+            "https://is.gd/qZzLrb"
         ],
         "city": {
             "ru": "Гомель",
             "en": "Гомель",
             "by": "Gomel"
+        },
+        "coordinates": {
+            "lat": 52.4257,
+            "lng": 31.012
         },
         "bio": [
             { 
@@ -661,7 +674,7 @@
             "by": "Фёдар Іванавіч Шмакаў"
         },
         "years": "1917—2009",
-        "video": "https://www.youtube.com/watch?v=WckdzuNpPTU",
+        "videoId": "WckdzuNpPTU",
         "gallery": [
             "https://is.gd/h90U8B",
             "https://is.gd/jVYWXG",
@@ -672,6 +685,10 @@
             "ru": "Витебск",
             "en": "Vitebsk",
             "by": "Віцебск"
+        },
+        "coordinates": {
+            "lat": 55.1951,
+            "lng": 30.206
         },
         "bio": [
             { 
@@ -716,36 +733,54 @@
             }
         ],
         "artwork": [
-            { "year": "1961", "name": {
-                "ru": "Батьковщина",
-                "en": "Fatherland",
-                "by": "Бацькаўшчына"
-            }},
-            { "year": "1962", "name": {
-                "ru": "Тревога",
-                "en": "Трывога",
-                "by": "Anxiety"
-            }},
-            { "year": "1964", "name": {
-                "ru": "Блэз",
-                "en": "Blaze",
-                "by": "Блэз"
-            }},
-            { "year": "1967", "name": {
-                "ru": "Верочка",
-                "en": "Verochka",
-                "by": "Верачка"
-            }},
-            { "year": "1968", "name": {
-                "ru": "Правда хорошо, а счастье лучше",
-                "en": "Truth is good, but happiness is better",
-                "by": "Праўда добра, а шчасце лепш"
-            }},
-            { "year": "1970", "name": {
-                "ru": "Мудромер",
-                "en": "Wise man",
-                "by": "Мудрамер" 
-            }}
+            { 
+                "year": "1961", 
+                "name": {
+                    "ru": "Батьковщина",
+                    "en": "Fatherland",
+                    "by": "Бацькаўшчына"
+                }
+            },
+            { 
+                "year": "1962", 
+                "name": {
+                    "ru": "Тревога",
+                    "en": "Трывога",
+                    "by": "Anxiety"
+                }
+            },
+            { 
+                "year": "1964", 
+                "name": {
+                    "ru": "Блэз",
+                    "en": "Blaze",
+                    "by": "Блэз"
+                }
+            },
+            { 
+                "year": "1967", 
+                "name": {
+                    "ru": "Верочка",
+                    "en": "Verochka",
+                    "by": "Верачка"
+                }
+            },
+            { 
+                "year": "1968", 
+                "name": {
+                    "ru": "Правда хорошо, а счастье лучше",
+                    "en": "Truth is good, but happiness is better",
+                    "by": "Праўда добра, а шчасце лепш"
+                }
+            },
+            { 
+                "year": "1970", 
+                "name": {
+                    "ru": "Мудромер",
+                    "en": "Wise man",
+                    "by": "Мудрамер" 
+                }
+            }
         ]
     }
 ]

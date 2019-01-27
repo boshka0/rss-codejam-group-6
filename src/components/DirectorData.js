@@ -6,7 +6,9 @@ const directorData = ({ director, lang, t }) => {
   const link = `/directors/${director.id}`;
   return (
     <div className="director-data">
-      <img className="director-data-img" src={director["gallery"][0]} alt="director" />
+      <div className="director-data-img" >
+        <img src={director["gallery"][0]} alt="director" />
+      </div>
       <div className="director-data-bio">
         <h3>{director.name[lang]}</h3>
         <h4 className="director-data-city">{director.city[lang]}</h4>
