@@ -1,15 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-export default function DirectorVidget(props) {
+export default function DirectorVidget({ data }) {
+  const link = `/directors/${data["id"]}`;
   return (
     <div className="director-vidget">
       <h1 className="director-vidget-heading">РЕЖИССЕР ДНЯ</h1>
-      <h2>{props.name}</h2>
-      <h3>{props.city}</h3>
-      <img src={props.photo} alt="director" />
-      <p>{props.mainInfo}</p>
-      <Link className="director-vidget-button" to="/director/1">
+      <div>
+        <h3>{data.name}</h3>
+        <img src={data.gallery[0]} alt="director" />
+      </div>
+      <Link className="director-vidget-button" to={link}>
         Узнать больше
       </Link>
     </div>
