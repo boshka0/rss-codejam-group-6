@@ -10,38 +10,18 @@ footer {
   color: #fff;
 }
 
-
 .foot-main{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: 15px 0;
   align-items: center;
-}
-
-.foot-logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
 }
 
 .block-string {
   padding-left: 10px;
   font-size: 18px;
   font-family: 'Open Sans Condensed', 'Georgia', serif;
-}
-
-.foot-links {
-  display: flex;
-  flex-direction: column;
-}
-
-.foot-link {
-  font-size: 16px;
-  font-family: 'Open Sans Condensed', 'Georgia', serif;
   color: #fff;
-}
-
-.foot-link:hover {
-  color: #ff1317;
 }
 
 .fa-search {
@@ -51,4 +31,5 @@ footer {
 .copyright {
   font-family: 'Poiret One', cursive;
   text-align: center;
+  margin: 15px 0;
 }

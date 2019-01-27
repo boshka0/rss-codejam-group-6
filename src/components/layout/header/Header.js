@@ -9,9 +9,9 @@ export default function Header() {
       <header className="main-header">
         <div className="logo">
           <img src={logo} width={50} height={50} alt={'logo'}/>
-          <a href={'#'}>
+          <Link to = "/">
             <h1>Режиссеры театра Беларуси</h1>
-          </a>
+          </Link>
         </div>
         <div className="nav">
           <Link className="page-link head-search" to="/directors">
