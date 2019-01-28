@@ -7,10 +7,17 @@ export default function Directors(props) {
   return (
     <Switch>
         <Route exact path='/directors' render={ () => (
-          <Search term={props.term} initialData={props.initialData} update={props.update} data={props.data}/>
+          <Search 
+            term={props.term} 
+            initialData={props.initialData} 
+            update={props.update} 
+            data={props.data} 
+            lang={props.lang}/>
         )} /> />
         <Route path='/directors/:number' render={(info) => (
-          <Director data={props.initialData[info.match.params.number - 1]} />
+          <Director 
+            data={props.initialData[info.match.params.number - 1]} 
+            lang={props.lang}/>
         )} /> />
     </Switch>
   )

@@ -12,8 +12,9 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.initialData = directorsData;
-    this.dirOfTheDay = Math.floor(Math.random() * 7);
+    this.dirOfTheDay = Math.floor(Math.random() * 5);
     this.state = {
+      lang: "en",
       term: "",
       data: directorsData 
     }
@@ -25,12 +26,19 @@ export default class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header />
+          <Header update={this.updateData}/>
           <Route exact path="/" render={props => (
-            <Main data={this.initialData[this.dirOfTheDay]}/>
+            <Main 
+            data={this.initialData[this.dirOfTheDay]}
+            lang={this.state.lang}/>
           )} />
           <Route path="/directors" render={props => (
-            <Directors term={this.state.term} initialData={this.initialData} update={this.updateData} data={this.state.data}/>
+            <Directors 
+            term={this.state.term} 
+            initialData={this.initialData} 
+            update={this.updateData} 
+            data={this.state.data}
+            lang={this.state.lang}/>
           )} />
           <Footer/>
         </div>

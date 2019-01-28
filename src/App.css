@@ -9,7 +9,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow-x: none;
 }
 
 body {
@@ -60,6 +59,7 @@ a {
 /*}*/
 
 .director-vidget {
+  margin-top: 5%;
   border: 2px solid var(--main-color);
   display: inline-block;
   background-color: beige;
@@ -84,6 +84,10 @@ a {
 .director-vidget-button:hover {
   background-color: var(--main-color);
   color: #fff;
+}
+
+.director-vidget img{
+  height: 300px;
 }
 
 .main-wrapper {
@@ -213,7 +217,11 @@ div.bigpicture.link.picture {
 .director-video {
   display: block;
   margin: 0 auto;
-  width: 100%;
+}
+
+.carousel {
+  overflow-x: hidden;
+}
 
 @media only screen and (max-width: 600px) {
   .director-page-img {
@@ -233,5 +241,9 @@ div.bigpicture.link.picture {
   .carousel-photo {
     height: 200px;
     margin: 0 20px;
+  }
+
+  .director-video {
+    width: 100%;
   }
 }
