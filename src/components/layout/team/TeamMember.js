@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from "../images/github-logo.png";
+import logo from "./images/github-logo.png";
 import PropTypes from "prop-types";
 
 export default function TeamMember(props) {
   return (
     <li className="team-member">
       <figure>
-        <img className="team-member-photo" src={props.photo} alt="developer" />
+        <img className="team-member-photo" src={props.photo} width="130" alt="developer" />
         <figcaption>{props.name}</figcaption>
       </figure>
       <a href={props.link} target="_base">
@@ -20,4 +20,4 @@ TeamMember.propTypes = {
   name: PropTypes.string,
   photo: PropTypes.string,
   link: PropTypes.string
-}
+};

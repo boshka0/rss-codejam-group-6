@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 import About from "../layout/about/About";
-import DirectorVidget from "../DirectorVidget";
-import Team from "../Team";
+import DirectorVidget from "../layout/widget/DirectorWidget";
+import Team from "../layout/team/Team";
 
 export default class Main extends Component {
   render() {

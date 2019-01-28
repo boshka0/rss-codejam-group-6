@@ -1,6 +1,6 @@
  [
     {
-        "id": 0,
+        "id": 1,
         "name": {
             "ru": "Лариса Помпеевна Александровская",
             "en": "Larisa Pompeevna Aleksandrovskaia",
@@ -179,7 +179,7 @@
         ]
     },
     {
-        "id": 1,
+        "id": 2,
         "name": {
             "ru": "Виталий Михайлович Барковский",
             "en": "Vitalii Mikhailovich Barkovskii",
@@ -206,8 +206,8 @@
                 "years": "1969",
                 "info": {
                     "ru": "Окончил Белорусскую государственную академию искусств. Учылся режиссуре у А. Эфроса.",
-                    "en": "Скончыў Беларускую дзяржаўную акадэмію мастацтваў. Учылся рэжысуры у А. Эфроса.",
-                    "by": "He graduated from the Belarusian State Academy of Arts. Studied directing at A. Efros."
+                    "en": "He graduated from the Belarusian State Academy of Arts. Studied directing at A. Efros.",
+                    "by": "Скончыў Беларускую дзяржаўную акадэмію мастацтваў. Учылся рэжысуры у А. Эфроса."
                 }
             },
             { 
@@ -325,7 +325,7 @@
         ]
     },
     {
-        "id": 2,
+        "id": 3,
         "name": {
             "ru": "Александр Федорович Горцуев",
             "en": "Aleksandr Fedorovich Gortsuev",
@@ -520,7 +520,7 @@
         ]
     },
     {
-        "id": 3,
+        "id": 4,
         "name": {
             "ru": "Лев Михайлович Эльстон",
             "en": "Lev Mikhailovich Elston",
@@ -536,8 +536,8 @@
         ],
         "city": {
             "ru": "Гомель",
-            "en": "Гомель",
-            "by": "Gomel"
+            "by": "Гомель",
+            "en": "Gomel"
         },
         "coordinates": {
             "lat": 52.4257,
@@ -699,7 +699,7 @@
         ]
     },
     {
-        "id": 4,
+        "id": 5,
         "name": {
             "ru": "Фёдор Иванович Шмаков",
             "en": "Fedor Ivanovich Shmakov",

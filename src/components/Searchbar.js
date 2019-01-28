@@ -26,7 +26,7 @@ export default class Searchbar extends Component {
       <input
         value={this.props.term}
         type="text"
-        className="searchbar"
+        className="search-bar"
         onChange={this.dataSearch}
         autoFocus
       />

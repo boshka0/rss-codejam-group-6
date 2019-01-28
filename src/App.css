@@ -27,152 +27,86 @@ a {
   flex-direction: column;
 }
 
-/*.main-header {*/
-  /*background: var(--main-color);*/
-  /*color: #fff;*/
-  /*padding: 10px 30px; */
-  /*display: flex;*/
-  /*justify-content: space-between;*/
-  /*align-items: center;*/
-/*}*/
-
-/*.logo {*/
-  /*max-width: 200px;*/
-  /*font-size: 55px;*/
-/*}*/
-
-/*.nav {*/
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: space-between;*/
-/*}*/
-
-/*.page-link {*/
-  /*color: #fff;*/
-  /*display: block;*/
-  /*font-size: 20px;*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-/*.page-link:hover {*/
-  /*color: #333;*/
-/*}*/
-
-.director-vidget {
-  margin-top: 5%;
-  border: 2px solid var(--main-color);
-  display: inline-block;
-  background-color: beige;
-}
-
-.director-vidget-heading {
-  background-color: var(--main-color);
-  padding: 10px;
-  color: #fff;
-}
-
-.director-vidget-button {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000;
-  display: inline-block;
-  padding: 5px;
-  border: 1px solid var(--main-color);
-  margin-bottom: 10px;
-}
-
-.director-vidget-button:hover {
-  background-color: var(--main-color);
-  color: #fff;
-}
-
-.director-vidget img{
-  height: 300px;
-}
-
 .main-wrapper {
   flex: 1 0 auto;
   text-align: center;
 }
 
-.team-wrapper {
-  margin: 50px 0;
-}
-
-.team-heading {
-  line-height: 55px;
-  background-color: var(--main-color);
-  color: white;
-}
-
-.team {
-  margin-top: 30px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.team-member {
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.team-member-photo {
-  border-radius: 50%;
-}
-
 .search-wrapper {
-  padding: 30px 10px;
+  padding: 30px 0;
 }
 
 .search-heading {
-  text-transform: uppercase;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
   text-align: center;
 }
 
-.searchbar {
-  width: 100%;
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  width: 46%;
   height: 30px;
   text-align: center;
   font-size: 23px;
-  margin: 20px 0;
+  margin: 5px auto 30px auto;
   text-transform: capitalize;
 }
 
-.searchbar:focus {
+.search-bar:focus {
   outline-color: var(--main-color);
 }
 
 .director-data {
-  border: 2px solid lightgray;
-  width: 60%;
-  margin: 10px auto;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  border: 1px solid lightgray;
+  max-width: 1080px;
+  margin: 10px auto;
   padding: 15px;
+  overflow: hidden;
 }
 
-.director-data-img img {
-  height: 100px;
+.director-data-img {
+  margin-right: 20px;
+}
+
+.director-data-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.director-data-bio > div {
+  font-family: 'Noto Serif SC', 'Georgia', serif;
 }
 
 .director-data-city {
-  font-weight: normal;
+  font-size: 14px;
   font-style: italic;
 }
 
+.director-data-info {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
 .director-data-button {
+  display: inline-block;
   padding: 5px;
-  background-color: var(--main-color);
-  color: white;
-  border: 2px solid transparent;
+  color: var(--main-color);
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .director-data-button:hover {
-  color: var(--main-color);
-  background-color: white;
-  border: 2px solid var(--main-color);
+  color: #fff;
+  background-color: var(--main-color);
 }
 
 .director-page {
@@ -204,6 +138,17 @@ a {
   font-size: 1.8rem;
 }
 
+.director-page-name {
+  font-size: 50px;
+  font-family: 'Noto Serif SC', 'Georgia', serif;
+  margin-bottom: 20px;
+}
+.director-page-city {
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Noto Serif SC', 'Georgia', serif;
+}
+
 .carousel-photo {
   height: 400px;
   margin: 0 20px;
@@ -230,7 +175,7 @@ div.bigpicture.link.picture {
   }
 
   .director-page-img img {
-    width: 80%;
+    width: 60%;
   }
 
   .director-page-bio {
@@ -245,5 +190,15 @@ div.bigpicture.link.picture {
 
   .director-video {
     width: 100%;
+  }
+
+  .director-page-name {
+    font-size: 20px;
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    margin-bottom: 5px;
+  }
+
+  .director-page-city {
+    margin-bottom: 25px;
   }
 }
