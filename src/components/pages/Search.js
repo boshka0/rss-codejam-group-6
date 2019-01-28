@@ -6,7 +6,7 @@ import DirectorList from '../DirectorList';
 function Search(props) {
   return (
     <div className="search-wrapper">
-      <h2 className="search-heading">{props.t('Enter director')}</h2>
+      <div className="search-heading">{props.t('Enter director')}</div>
       <Searchbar
         term={props.term}
         initialData={props.initialData}
