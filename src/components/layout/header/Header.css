@@ -26,10 +26,26 @@ h1 {
   font-family: 'Playfair Display', 'Georgia', serif;
 }
 
-.head-search {
+.back-link {
+  padding: 2px 10px;
   color: #fff;
   font-size: 18px;
   font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.back-link:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.head-search {
+  padding: 2px 10px;
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Playfair Display', 'Georgia', serif;
+}
+
+.head-search:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .header:hover {

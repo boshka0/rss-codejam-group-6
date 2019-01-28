@@ -29,6 +29,9 @@ function Header(props) {
             <i className="fas fa-search" />
             <span>{props.t('Find')}</span>
           </Link>
+          <Link  to="/">
+            <span className="back-link">{props.t('Home')}</span>
+          </Link>
           <select className="language-select" onChange={handleChange}>
               <option value="en">EN</option>
               <option value="ru">RU</option>
