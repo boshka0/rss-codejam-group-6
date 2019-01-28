@@ -1,0 +1,77 @@
+.director-day {
+  display: flex;
+  margin: 60px 0;
+}
+
+.director-vidget {
+  display: flex;
+  margin: auto;
+  background-color: #e4e4e4;
+}
+
+.director-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.director-block:last-child {
+  align-items: center;
+}
+
+.director-vidget-heading {
+  padding: 10px 60px;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-size: 22px;
+}
+
+h4 {
+  padding: 10px 0;
+  color: #585757;
+  font-size: 18px;
+  font-family: 'Noto Serif SC', serif;
+}
+
+.director-vidget-button {
+  display: inline-block;
+  padding: 15px;
+  color: var(--main-color);
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.director-vidget-button:hover {
+  color: #fff;
+  background-color: var(--main-color);
+}
+
+.director-vidget img{
+  max-width: 100%;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 600px){
+  .director-vidget {
+    flex-direction: column;
+  }
+
+  .director-vidget:first-child {
+    align-items: center;
+  }
+
+  .director-vidget-heading {
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 14px;
+  }
+}
