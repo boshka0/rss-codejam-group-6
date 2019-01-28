@@ -26,8 +26,8 @@ export default class Director extends Component {
             <img  src={this.props.data["gallery"][0]} alt="director" />
           </div>
           <div className="director-page-bio">
-            <h1 className="director-page-name">{ this.props.data.name[this.props.lang] }</h1>
-            <h2 className="director-page-city">{ this.props.data.city[this.props.lang] }</h2>
+            <div className="director-page-name">{ this.props.data.name[this.props.lang] }</div>
+            <div className="director-page-city">{ this.props.data.city[this.props.lang] }</div>
           </div>
         </div> 
         <Slider {...settings} className="carousel" >

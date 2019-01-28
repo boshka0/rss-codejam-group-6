@@ -109,8 +109,6 @@ a {
   background-color: var(--main-color);
 }
 
-/*director-page*/
-
 .director-page {
   max-width: 1024px;
   margin: 10px auto;
@@ -140,6 +138,17 @@ a {
   font-size: 1.8rem;
 }
 
+.director-page-name {
+  font-size: 50px;
+  font-family: 'Noto Serif SC', 'Georgia', serif;
+  margin-bottom: 20px;
+}
+.director-page-city {
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'Noto Serif SC', 'Georgia', serif;
+}
+
 .carousel-photo {
   height: 400px;
   margin: 0 20px;
@@ -166,7 +175,7 @@ div.bigpicture.link.picture {
   }
 
   .director-page-img img {
-    width: 80%;
+    width: 60%;
   }
 
   .director-page-bio {
@@ -181,5 +190,15 @@ div.bigpicture.link.picture {
 
   .director-video {
     width: 100%;
+  }
+
+  .director-page-name {
+    font-size: 20px;
+    font-family: 'Noto Serif SC', 'Georgia', serif;
+    margin-bottom: 5px;
+  }
+
+  .director-page-city {
+    margin-bottom: 25px;
   }
 }
