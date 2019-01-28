@@ -2,7 +2,7 @@
   "name": "cultural-project",
   "version": "1.0.0",
   "private": true,
-  "homepage": "http://boshka0.github.io/rss-codejam-group-6",
+  "homepage": "./",
   "dependencies": {
     "jquery": "^3.3.1",
     "leaflet": "^1.4.0",
