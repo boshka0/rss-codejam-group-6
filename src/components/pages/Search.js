@@ -11,8 +11,11 @@ function Search(props) {
         term={props.term}
         initialData={props.initialData}
         update={props.update}
+        lang={props.lang}
       />
-      <DirectorList data={props.data} />
+      <DirectorList 
+        data={props.data} 
+        lang={props.lang} />
     </div>
   );
 }

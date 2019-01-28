@@ -5,9 +5,9 @@ export default class Searchbar extends Component {
     const value = e.target.value.toLowerCase();
 
     const filter = this.props.initialData.filter(director => {
-      return director.name
+      return director.name[this.props.lang]
         .toLowerCase()
-        .includes(value) || director.city.toLowerCase().includes(value);
+        .includes(value) || director.city[this.props.lang].toLowerCase().includes(value);
     });
 
     this.props.update({
