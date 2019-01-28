@@ -11,8 +11,10 @@ function DirectorVidget({data, lang, t}) {
       <img src={data.gallery[0]} alt="director" height={300}/>
       <div className="director-block">
         <div className="director-vidget-heading">{t('Director of the day')}</div>
-        <div>
-          <h4>{data.name[lang]}</h4>
+        <h4>{data.name[lang]}</h4>
+        <div className="director-info">
+          <p>{data.bio[0].info[lang]}</p>
+          <p>{data.bio[1].info[lang]}</p>
         </div>
         <Link className="director-vidget-button" to={link}>
           {t('Learn more')}

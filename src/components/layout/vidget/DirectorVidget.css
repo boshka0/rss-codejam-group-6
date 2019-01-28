@@ -35,6 +35,15 @@ h4 {
   font-family: 'Noto Serif SC', serif;
 }
 
+.director-info {
+  width: 300px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  color: #6f6e6e;
+}
+
 .director-vidget-button {
   display: inline-block;
   padding: 15px;
@@ -60,18 +69,26 @@ h4 {
 @media screen and (max-width: 600px){
   .director-vidget {
     flex-direction: column;
+
   }
 
   .director-vidget:first-child {
-    align-items: center;
-  }
+     align-items: center;
+
+   }
 
   .director-vidget-heading {
     padding: 5px 15px;
     font-size: 20px;
+    align-self: stretch;
   }
 
   h4 {
     font-size: 14px;
   }
+
+  .director-block {
+    align-items: flex-start;
+  }
+
 }
