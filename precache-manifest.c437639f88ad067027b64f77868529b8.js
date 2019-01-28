@@ -40,12 +40,12 @@ self.__precacheManifest = [
     "url": "/rss-codejam-group-6/static/js/main.cc82b7b4.chunk.js"
   },
   {
-    "revision": "4ef53e7fb2ac8d3b9ea7a188faf2c23e",
-    "url": "/rss-codejam-group-6/static/media/about-1x.4ef53e7f.jpg"
-  },
-  {
     "revision": "99a85f4a62879d94a0569502b5e806a9",
     "url": "/rss-codejam-group-6/static/media/about-2x.99a85f4a.jpg"
+  },
+  {
+    "revision": "4ef53e7fb2ac8d3b9ea7a188faf2c23e",
+    "url": "/rss-codejam-group-6/static/media/about-1x.4ef53e7f.jpg"
   },
   {
     "revision": "25f6178b2431078cb4f914031daf08e8",
@@ -56,12 +56,12 @@ self.__precacheManifest = [
     "url": "/rss-codejam-group-6/static/media/slick.ced611da.eot"
   },
   {
-    "revision": "d41f55a78e6f49a5512878df1737e58a",
-    "url": "/rss-codejam-group-6/static/media/slick.d41f55a7.ttf"
-  },
-  {
     "revision": "b7c9e1e479de3b53f1e4e30ebac2403a",
     "url": "/rss-codejam-group-6/static/media/slick.b7c9e1e4.woff"
+  },
+  {
+    "revision": "d41f55a78e6f49a5512878df1737e58a",
+    "url": "/rss-codejam-group-6/static/media/slick.d41f55a7.ttf"
   },
   {
     "revision": "84bd3f47b7d38973995f",
